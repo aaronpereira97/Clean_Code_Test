@@ -1,0 +1,41 @@
+apply plugin: 'kotlin'
+
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+
+
+configurations.all {
+    resolutionStrategy {
+        force "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    }
+}
+
+
+dependencies {
+
+    implementation project(path: ':data')
+    def remoteDependencies = rootProject.ext.remoteDependencies
+    def remoteTestDependencies = rootProject.ext.remoteTestDependencies
+
+    //DEPENDENCIES
+    implementation remoteDependencies.rxJava
+    implementation remoteDependencies.rxKotlin
+    implementation remoteDependencies.kotlin
+    implementation remoteDependencies.retrofit
+    implementation remoteDependencies.gson
+
+
+
+
+    //TESTING
+    implementation remoteTestDependencies.kotlinJUnit
+    implementation remoteTestDependencies.junit
+    implementation  (remoteTestDependencies.mockito) {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-reflect'
+    }
+
+
+
+}

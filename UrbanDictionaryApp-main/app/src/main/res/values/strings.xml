@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">UrbanDictionaryApp</string>
+    <string name="search_by_term_text">Search by Term</string>
+    <string name="enter_search_term_hint">Enter Search Term</string>
+    <string name="search_text">Search</string>
+</resources>

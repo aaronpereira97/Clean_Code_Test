@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tfl-Challenger-API-Clean-Archichecture.iml" filepath="$PROJECT_DIR$/.idea/modules/Tfl-Challenger-API-Clean-Archichecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/Tfl-Challenger-API-Clean-Archichecture.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/Tfl-Challenger-API-Clean-Archichecture.data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/Tfl-Challenger-API-Clean-Archichecture.domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/Tfl-Challenger-API-Clean-Archichecture.domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation/Tfl-Challenger-API-Clean-Archichecture.presentation.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation/Tfl-Challenger-API-Clean-Archichecture.presentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/remote/Tfl-Challenger-API-Clean-Archichecture.remote.iml" filepath="$PROJECT_DIR$/.idea/modules/remote/Tfl-Challenger-API-Clean-Archichecture.remote.iml" />
+    </modules>
+  </component>
+</project>

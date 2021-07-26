@@ -1,0 +1,38 @@
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-allopen'
+
+
+allOpen {
+    // allows mocking for classes w/o directly opening them for release builds
+    annotation 'com.challenger.domain.utils.OpenClass'
+}
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+configurations.all {
+    resolutionStrategy {
+        force "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    }
+}
+
+dependencies {
+    def domainDependencies = rootProject.ext.domainDependencies
+    def domainTestDependencies = rootProject.ext.domainTestDependencies
+
+    //DEPENDENCIES
+    implementation domainDependencies.rxJava
+    implementation domainDependencies.rxAndroid
+
+    implementation domainDependencies.kotlin
+
+    //TESTING
+    implementation domainTestDependencies.kotlinJUnit
+    implementation domainTestDependencies.junit
+
+    implementation  (domainTestDependencies.mockito) {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-reflect'
+    }
+
+
+
+}

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tfl-Challenger-API-Clean-Archichecture</string>
+    <string name="type_a_road_id_edittext">Please enter road ID...</string>
+    <string name="error_request_msg_toast">Something was wrong </string>
+    <string name="request_success_msg">SUCCESS :)</string>
+</resources>

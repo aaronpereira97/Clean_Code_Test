@@ -1,0 +1,144 @@
+ext {
+    //Android
+    androidBuildToolsVersion = "30.0.1"
+    androidMinSdkVersion = 26
+    androidTargetSdkVersion = 26
+    androidCompileSdkVersion = 30
+
+
+    versionCode = 1
+    versionName = '1.0'
+
+
+    testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+    //Native libraries
+    kotlinVersion = '1.3.72'
+    supportVersion = '1.2.0'
+    runnerVersion = '1.1.0'
+
+    cardViewVersion = '1.0.0'
+
+    //External Libraries
+    constraintLayoutVersion = '2.0.2'
+    multidexVersion = '2.0.0'
+
+    navigationVersion = '2.3.0'
+    koinVersion = "2.1.6"
+    javaxAnnotationVersion = '1.0'
+
+    //Junit...
+    junitVersion = '4.13'
+    mockitoVersion = '2.18.0'
+    espressoVersion = '3.1.0'
+    robolectricVersion = '3.8'
+    mockitoCoreVersion = '2.21.0'
+    supportTest = '1.1.0'
+    mockitoKotlinVersion = '1.5.0'
+
+    //Jetpack components
+    lifecycleVersion = '2.2.0'
+    //rxjava version
+    rxJavaVersion = '2.1.16'
+    rxKotlinVersion = '2.1.0'
+    rxAndroidVersion = '2.0.2'
+
+    //Retrofit
+    retrofit2Version = '2.9.0'
+    gsonVersion = '2.8.6'
+    converterGsonVersion = '2.5.0'
+
+
+    rxViewVersion = '0.4.0'
+
+    //Image library
+    picassoVersion = '2.71828'
+
+    canaryLeakVersion = '2.5'
+
+    // App Layer
+    appDependencies = [
+            kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+            appCompat             : "androidx.appcompat:appcompat:$supportVersion",
+            material              : "com.google.android.material:material:$supportVersion",
+            supportv4             : "androidx.legacy:legacy-support-v4:$supportVersion",
+            recyclerview          : "androidx.recyclerview:recyclerview:$supportVersion",
+            cardview              : "androidx.cardview:cardview:$cardViewVersion",
+            annotation            : "androidx.annotation:annotation:$supportVersion",
+            retrofit              : "com.squareup.retrofit2:retrofit:$retrofit2Version",
+            retrofitRxJava2Adapter: "com.squareup.retrofit2:adapter-rxjava2:$retrofit2Version",
+            retrofitGsonConverter : "com.squareup.retrofit2:converter-gson:$retrofit2Version",
+            constraintLayout      : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            picasso               : "com.squareup.picasso:picasso:$picassoVersion",
+            multidex              : "androidx.multidex:multidex:$multidexVersion",
+            lifecycleExtensions   : "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion",
+            lifecycleCommon       : "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion",
+            navigationFragment    : "android.arch.navigation:navigation-fragment-ktx:$navigationVersion",
+            navigationUi          : "android.arch.navigation:navigation-ui-ktx:$navigationVersion",
+            koinAndroid           : "org.koin:koin-android:$koinVersion",
+            koinScope             : "org.koin:koin-android-scope:$koinVersion",
+            koinViewModel         : "org.koin:koin-android-viewmodel:$koinVersion",
+            rxJava                : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
+            rxView                : "com.jakewharton.rxbinding:rxbinding:$rxViewVersion",
+            LeakCanary            : "com.squareup.leakcanary:leakcanary-android:$canaryLeakVersion",
+
+    ]
+
+    appTestDependencies = [
+            junit                 : "junit:junit:$junitVersion",
+            mockito               : "com.nhaarman:mockito-kotlin:${mockitoKotlinVersion}",
+            testRunner            : "androidx.test:runner:$runnerVersion",
+            testRules             : "androidx.test:rules:$runnerVersion",
+            espressoCore          : "androidx.test.espresso:espresso-core:$espressoVersion",
+            espressoContrib       : "androidx.test.espresso:espresso-contrib:$espressoVersion",
+            espressoIdlingResource: "androidx.test.espresso:espresso-idling-resource:$espressoVersion",
+            robolectric           : "org.robolectric:robolectric:$robolectricVersion",
+    ]
+
+
+    // Domain Layer
+    domainDependencies = [
+            kotlin   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+            rxJava   : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+            rxAndroid: "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+    ]
+
+    domainTestDependencies = [
+            kotlinJUnit: "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
+            junit      : "junit:junit:$junitVersion",
+            mockito     : "com.nhaarman:mockito-kotlin:${mockitoKotlinVersion}",
+    ]
+
+    //Data Layer
+    dataDependencies = [
+            kotlin       : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
+            rxJava       : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxKotlin     : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            converterGson: "com.squareup.retrofit2:converter-gson:$converterGsonVersion"
+
+    ]
+    dataTestDependencies = [
+            kotlinJUnit: "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
+            junit      : "junit:junit:$junitVersion",
+            mockito     : "com.nhaarman:mockito-kotlin:${mockitoKotlinVersion}",
+            robolectric: "org.robolectric:robolectric:$robolectricVersion",
+    ]
+
+    remoteDependencies = [
+            gson    : "com.google.code.gson:gson:${gsonVersion}",
+            rxJava  : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxKotlin: "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            kotlin  : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            retrofit: "com.squareup.retrofit2:retrofit:$retrofit2Version",
+
+    ]
+
+    remoteTestDependencies = [
+            kotlinJUnit: "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
+            junit      : "junit:junit:$junitVersion",
+            mockito     : "com.nhaarman:mockito-kotlin:${mockitoKotlinVersion}",
+            robolectric: "org.robolectric:robolectric:$robolectricVersion",
+    ]
+
+}
